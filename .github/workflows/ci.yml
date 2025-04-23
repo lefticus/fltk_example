@@ -165,7 +165,7 @@ jobs:
           opencppcoverage: true
 
       - name: Install Ubuntu Packages
-        if: runner.os == "Linux"
+        if: runner.os == 'Linux'
         run: sudo apt install -y libflw3-dev
 
       - name: Configure CMake

@@ -33,7 +33,7 @@ function(fltk_example_setup_dependencies)
   endif()
 
   if(NOT TARGET ftxui::screen)
-    cpmaddpackage("gh:ArthurSonzogni/FTXUI@6.0.2")
+    cpmaddpackage("gh:fltk/fltk#release-1.4.2")
   endif()
 
   if(NOT TARGET tools::tools)

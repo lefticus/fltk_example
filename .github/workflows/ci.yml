@@ -166,7 +166,7 @@ jobs:
 
       - name: Install Ubuntu Packages
         if: runner.os == 'Linux'
-        run: sudo apt install -y libflw3-dev
+        run: sudo apt install -y libglfw3-dev
 
       - name: Configure CMake
         run: |

@@ -44,10 +44,10 @@ int main(int argc, char **argv)
     }
 
     // Create a window
-    auto *window = new Fl_Window(340, 180, "FLTK Demo"); // NOLINT magic numbers
+    auto window = std::make_unique<Fl_Window>(340, 180, "FLTK Demo"); // NOLINT magic numbers
 
     // Create a button
-    auto *button = new Fl_Button(120, 70, 100, 40, "Quit"); // NOLINT magic numbers
+    auto button = std::make_unique<Fl_Button>(120, 70, 100, 40, "Quit"); // NOLINT magic numbers
     button->callback(on_quit);
 
     window->end();   // End window construction
